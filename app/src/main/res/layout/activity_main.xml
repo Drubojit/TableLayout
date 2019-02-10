@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <TableLayout
+       android:id="@+id/tablelayout1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       <TableRow
+           android:id="@+id/tablerow1"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="100">
+           <TextView
+               android:id="@+id/textview1"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="50"
+               android:gravity="center"
+               android:text="Drubo"
+               android:textSize="25sp"/>
+           <TextView
+               android:id="@+id/textview2"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="50"
+               android:gravity="center"
+               android:text="27"
+               android:textSize="25sp"/>
+
+       </TableRow>
+
+       <View
+           android:layout_width="fill_parent"
+           android:layout_height="3dip"
+           android:background="#000000"
+           
+           />
+
+   </TableLayout>
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Next Row"
+        />
+</LinearLayout>
